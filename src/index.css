@@ -35,7 +35,18 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+#Sort {
+  position: inherit;
+  top: -49px;
+  left: 243px;
+  color: orange;
+  width: 70px;
+  height: 40px;
+}
+#Sort:hover{
+  width: 71px;
+  height: 41px;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -52,7 +63,18 @@ button:hover {
   border-color: #646cff;
 
 }
-#Pirority{
+ 
+#TodoContainer{
+ background-color: rgba(70, 70, 63, 0.466);
+ border-radius: 8px;
+ border: 1px solid transparent;
+ padding: 0.6em 1.2em;
+ font-size: 1em;
+ font-weight: 500;
+ font-family: inherit;
+ background-color: #1a1a1a;
+ cursor: pointer;
+ transition: border-color 0.25s;
 
 }
 #TodoList{
