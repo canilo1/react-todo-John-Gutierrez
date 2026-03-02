@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(150, 12, 12, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -13,7 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
  
 }
+body{
+ background: hsla(333, 37%, 46%, 1);
 
+background: linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A04970", endColorstr="#6D6C83", GradientType=1 );
 a {
   font-weight: 500;
   color: #646cff;
@@ -34,6 +43,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  cursor: none;
 }
 
 button {
@@ -52,13 +62,12 @@ button:hover {
   border-color: #646cff;
 
 }
-#Pirority{
 
-}
 #TodoList{
   border-radius: 1px;
   border-color: red;
   list-style: none;
+  cursor: none;
 }
 button:focus,
 button:focus-visible {

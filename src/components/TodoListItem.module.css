@@ -11,33 +11,7 @@ body {
   min-height: 100vh;
 }
 
-.todoItem {
-  display: flex;
-  align-items: center;
-  padding-left: 10%;
-  border-radius: 5%;
-  border: 2px solid black; 
-  padding: 10px; 
-  margin-bottom: 10px; 
-  opacity: 0.5;
-  transition: all 0.3s ease; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-.todoItem:hover {
-  opacity: 1;
-  transform: scale(1.01);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
 
-.todoText {
-  list-style: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  padding: 10px; 
-  border: 2px solid black; 
-  border-radius: 10%;
-  transition: background-color 0.3s ease; 
-}
 button {
   color: red;
   margin-left: 10px; 
@@ -50,7 +24,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.2); 
+  transform: scale(1.00001); 
 }
 
 h1 {
@@ -96,7 +70,10 @@ input:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-
+div{
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 768px) {
   .todoItem {
     flex-direction: column;
@@ -118,4 +95,33 @@ input:focus {
 
 .icon {
   margin-right: 10px;
+}
+.todoItem {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  border-radius: 1%;
+  border: 2px solid black; 
+  padding: 10px; 
+  
+  background-color: rgb(77, 69, 69);
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: white;
+}
+
+.todoItem:hover {
+  opacity: 1;
+  transform: scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.todoText {
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  padding: 10px; 
+ 
+  border-radius: 10%;
+  transition: background-color 0.3s ease; 
 }

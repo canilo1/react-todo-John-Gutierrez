@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import PropTypes from 'prop-types'; // ES6 import
 import InputWithLabel from "./InputWithLabel";
 
@@ -42,9 +42,7 @@ function AddToDoForm({ onAddTodo }) {
 
     return (
         <form onSubmit={handleAddTodo}>
-            <InputWithLabel todoTitle={todoTitle} handleTitleChange={handleTitleChange}>
-                Title
-            </InputWithLabel>
+            <InputWithLabel todoTitle={todoTitle} handleTitleChange={handleTitleChange}/>
             <button 
                 onMouseEnter={toggleOpacityAnimation} 
                 onMouseLeave={mouseLeft} 
